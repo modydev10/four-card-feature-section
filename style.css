@@ -2,5 +2,71 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: poppins-bold;
 }
 
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+:root {
+
+/* Primary */
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+/* Neutral */
+--Grey500: hsl(234, 12%, 34%);
+--Grey400: hsl(212, 6%, 44%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+body {
+    /* height: 100dvh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 30px;
+}
+
+div.info-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+span.taglaine {
+    font-family: poppins-bold;
+    color: var(--Grey500);
+}
+
+main.boxes-container {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 14rem;
+    max-width: 90%;
+    height: 9rem;
+    /* max-height: 90%; */
+    border: 2px solid blue;
+}

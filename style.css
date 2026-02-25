@@ -61,38 +61,24 @@ div.info-container {
 
 span.taglaine {
     font-family: poppins-light;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: clamp(1rem, 6vw, 2.4rem);
     color: var(--Grey400);
-
-    /*fontsize:
-        1.5rem - 375px screen size
-         - 320px screen size
-    */
+    
 }
 
 span.subtitle {
     font-family: poppins-semiBold;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: clamp(1rem, 6vw, 2.4rem);
     color: var(--Grey500);
-    
-    
-    /*fontsize:
-        1.5rem - 375px screen size
-         - 320px screen size
-    */
 }
 
 span.description {
     font-family: poppins-regular;
     color: var(--Grey400);
-    font-size: 0.9rem;
+    font-size: clamp(1rem, 1.7vw, 0.1rem);
     padding: 1.2rem 5px 0;
-    /* border: 2px solid blue; */
-
-    /*fontsize:
-    0.9rem - 375px screen size
-     - 320px screen size
-    */
 }
 
 
@@ -106,45 +92,35 @@ main.boxes-container {
 }
 
 .box {
-    /* width: 14rem; */
     width: 100%;
-    height: 18rem;
+    aspect-ratio: 1.5;
     border-radius: 0.5rem;
     box-shadow: 0 8px 12px 2px rgba(0, 0, 0, 0.15);
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
-    padding: 0 1rem;
+    padding: 1.2rem 2rem;
 
 }
 
 .box-title {
+    /* border: 2px solid blue; */
     color: var(--Grey500);
     font-family: poppins-semiBold;
-    font-size: 1.5rem;
-
-    /*fontsize:
-        1.5rem - 375px screen size
-        - 320px screen size
-    */
+    font-size: clamp(1.5rem, 7vw, 1.5rem);
 }
 
 
 span.box-description {
     color: var(--Grey400);
-    /* border: 2px solid red; */
-    padding-bottom: 1rem;
-    font-size: 1rem;
-
-    /*fontsize:
-    1rem - 375px screen size
-    - 320px screen size
-    */
+    padding-bottom: 1.5rem;
+    font-size: clamp(0.9rem, 3.8vw, 1.1rem);
 }
 
 .box-img {
+    /* border: 2px solid red; */
     width: 5rem;
     align-self: flex-end;
 }
